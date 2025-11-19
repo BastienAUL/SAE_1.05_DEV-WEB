@@ -1,17 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: white;
-    min-height: 100vh;
+    background: #F8F8F8F8;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+}
+article{
+    width: 150vh;
+    height: 10px;
+    filter: drop-shadow(rgba(0, 0, 0,0.25) 0px 5px 20px);
+}
+
+svg{
+    background-color: white;
+    padding: 50px;
+    padding-left: 100px;
+    border-radius: 30px;
 }
 
 path {
@@ -26,9 +29,51 @@ path:hover {
     fill: #cc0102;
     stroke: #ffffff;
     stroke-width: 2.5;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+    box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
-article{
-    width: 1000px;
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup:target {
+  display: flex;
+}
+
+.popup-content {
+    border: 3px solid black;
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.close {
+    display: inline-block;
+    margin-top: 20px;
+    background: #222;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.close:hover {
+    background: #444;
+}
+
+#texte-carte{
+    width: 200px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #1C2F66;
+    color: #1C2F66;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
