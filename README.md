@@ -1,7 +1,7 @@
 # Site USA SAE 1.05
 ---
 
-Site web en HTML/CSS réalisé dans le cadre de la SAE1.05 du BUT Informatique à Lannion
+Site web en HTML/CSS réalisé dans le cadre de la SAE1.05 du BUT Informatique à Lannion 
 
 
 
