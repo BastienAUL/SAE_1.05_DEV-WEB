@@ -199,3 +199,24 @@ path:hover {
     width: 70px;
     height: 70px;
 }
+
+.header-oeuvres {
+    background-color: var(--bleu-ciel);
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-top: 5em;
+    padding: 2em;
+}
+
+.header-oeuvres h1 {
+    color: white;
+    font-family: 'BEBAS';
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+}
