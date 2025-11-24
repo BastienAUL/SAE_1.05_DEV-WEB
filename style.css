@@ -14,7 +14,11 @@
 
 :root {
     --bleu-fonce: #1C2F66;
+    --bleu-deep: #1D3060;
+    --bleu: #0A3D91;
     --bleu-ciel: #3e5fbf;
+    --rouge-fonce: #BF0606;
+    --rouge-deep:#A41015;
     --rouge: #cc0102;
     --background-gradiant: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
 
