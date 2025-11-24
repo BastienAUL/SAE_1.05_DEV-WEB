@@ -28,17 +28,17 @@
     --rouge-fonce: #BF0606;
     --rouge-deep:#A41015;
     --rouge: #cc0102;
-    --background-gradiant: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
+    --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
     --border-radius-bloc: 15px;
 
 }
 
 body {
     background: #F8F9FA;
-    background: var(--background-gradiant);
-    align-items: center;
-    justify-content: center;
+    background: var(--background-gradient);
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -107,6 +107,62 @@ ul{
     height: 28px;
 }
 
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 280px;
+    color: white;
+    font-family: 'NATS';
+}
+
+.haut-footer{
+    background-color: var(--bleu-ciel);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.haut-footer h1{
+    font-size: 36px;
+}
+
+.haut-footer h2{
+    font-size: 32px;
+}
+
+.haut-footer .contact{
+    display: flex;
+}
+
+.contact-email , .contact-tel , .contact-adr{
+    width: 30em;
+    height: 10em;
+    text-align: center;
+}
+
+.contact-email{
+    border-right: 3px solid white;
+}
+
+
+.contact-tel{
+    border-right: 3px solid white;
+}
+
+.haut-footer h3{
+    font-size: 20px;
+}
+
+.bas-footer{
+    background-color: var(--bleu-fonce);
+    height: 70px;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+}
+
 #fullscreen_las-vegas {
     width: 99.2vw;
     height: 100vh;
@@ -145,11 +201,9 @@ ul{
     font-weight: 400;
 }
 
-article {
-    height: 10px;
+.carte {
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
     display: flex;
-    margin-top: 1000px;
 }
 
 svg {
