@@ -149,3 +149,18 @@ footer{
     font-size: 10px;
     justify-content: center;
 }
+
+.contact-email , .contact-tel , .contact-adr{
+    width: 30em;
+    height: 10em;
+    text-align: center;
+}
+
+.contact-email{
+    border-right: 3px solid white;
+}
+
+
+.contact-tel{
+    border-right: 3px solid white;
+}
