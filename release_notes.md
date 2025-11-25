@@ -1,6 +1,12 @@
+# Release notes 
 
 
 
+## Version 1.1.1 
+- refonte de la nav 
+- ajout d'images 
+- ajout de css perso pour faire le css indépendament des autres pour le debut
+- ajout d'images
 
 ## Version 1.1.0
 - fix de la nav (en partie)
