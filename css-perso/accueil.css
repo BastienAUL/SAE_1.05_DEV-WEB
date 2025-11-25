@@ -1,23 +1,3 @@
-.haut-footer{
-    background-color: var(--bleu-ciel);
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.haut-footer h1{
-    font-size: 36px;
-}
-
-.haut-footer h2{
-    font-size: 32px;
-}
-
-.haut-footer .contact{
-    display: flex;
-}
-
 .contact-email , .contact-tel , .contact-adr{
     width: 30em;
     height: 10em;
@@ -31,18 +11,6 @@
 
 .contact-tel{
     border-right: 3px solid white;
-}
-
-.haut-footer h3{
-    font-size: 20px;
-}
-
-.bas-footer{
-    background-color: var(--bleu-fonce);
-    height: 70px;
-    display: flex;
-    font-size: 10px;
-    justify-content: center;
 }
 
 #fullscreen_las-vegas {

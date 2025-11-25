@@ -117,3 +117,35 @@ footer{
     color: white;
     font-family: 'NATS';
 }
+
+.haut-footer{
+    background-color: var(--bleu-ciel);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.haut-footer h1{
+    font-size: 36px;
+}
+
+.haut-footer h2{
+    font-size: 32px;
+}
+
+.haut-footer .contact{
+    display: flex;
+}
+
+.haut-footer h3{
+    font-size: 20px;
+}
+
+.bas-footer{
+    background-color: var(--bleu-fonce);
+    height: 70px;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+}
