@@ -8,6 +8,11 @@
 - ajout de css perso pour faire le css indépendament des autres pour le debut
 - ajout d'images
 
+- Personnages : 
+  - début page avec tout les liens des personnages
+  - début du css
+  - import d'une image 
+
 ## Version 1.1.0
 - fix de la nav (en partie)
 - fix lien nav (en partie)
