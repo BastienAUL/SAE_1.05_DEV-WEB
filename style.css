@@ -361,6 +361,8 @@ path:hover {
 .main-oeuvres section div p {
     width: 80%;
     text-align: left;
+    font-family: 'FREDOKA';
+    font-weight: 100;
 }
 
 .main-oeuvres section div h2 {
