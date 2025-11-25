@@ -1,371 +1,430 @@
 @font-face {
-    font-family: 'NATS';
-    src: url('assets/fonts/NATS.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "NATS";
+  src: url("assets/fonts/NATS.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'BEBAS';
-    src: url('assets/fonts/BebasNeue-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "BEBAS";
+  src: url("assets/fonts/BebasNeue-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'FREDOKA';
-    src: url('assets/fonts/fredoka.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "FREDOKA";
+  src: url("assets/fonts/fredoka.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 :root {
-    --bleu-fonce: #1C2F66;
-    --bleu-deep: #1D3060;
-    --bleu: #0A3D91;
-    --bleu-ciel: #3e5fbf;
-    --rouge-fonce: #BF0606;
-    --rouge-deep:#A41015;
-    --rouge: #cc0102;
-    --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
-    --border-radius-bloc: 15px;
-
+  --bleu-fonce: #1c2f66;
+  --bleu-deep: #1d3060;
+  --bleu: #0a3d91;
+  --bleu-ciel: #3e5fbf;
+  --rouge-fonce: #bf0606;
+  --rouge-deep: #a41015;
+  --rouge: #cc0102;
+  --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
+  --border-radius-bloc: 15px;
 }
 
 body {
-    background: #F8F9FA;
-    background: var(--background-gradient);
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  background: #f8f9fa;
+  background: var(--background-gradient);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-nav {
-    font-family: 'NATS';
-    color: var(--bleu-fonce);
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90px;
-    background: #fff;
-    border-bottom: 3px solid var(--rouge);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 40px;
+header nav {
+  font-family: "NATS";
+  color: var(--bleu-fonce);
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  border-bottom: 3px solid var(--rouge);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  transition: all 0.5s ease-in-out;
 }
 
 .left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    justify-content: center;
-    height: 50px;
-    margin-right: 50px;
-    padding-right: 15em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  height: 50px;
+  margin-right: 50px;
+  padding-right: 15em;
 }
 
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .right {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 100px;
-    margin: 0;
-    padding-right: 3em;
-    list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 100px;
+  margin: 0;
+  padding-right: 3em;
+  list-style: none;
 }
 
 .left a {
-    text-decoration: none;
-    color: #1C2F66;
+  text-decoration: none;
+  color: #1c2f66;
 }
 
 .right a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #1C2F66;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #1c2f66;
 }
 
 .right a img {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
-footer{
-    position: relative;
-    bottom: 0;
-    width: 99.2vw;
-    height: 280px;
-    color: white;
-    font-family: 'NATS';
+footer {
+  position: relative;
+  bottom: 0;
+  width: 99.2vw;
+  height: 280px;
+  color: white;
+  font-family: "NATS";
 }
 
-.haut-footer{
-    background-color: var(--bleu-ciel);
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.haut-footer {
+  background-color: var(--bleu-ciel);
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.haut-footer h1{
-    font-size: 36px;
+.haut-footer h1 {
+  font-size: 36px;
 }
 
-.haut-footer h2{
-    font-size: 32px;
+.haut-footer h2 {
+  font-size: 32px;
 }
 
-.haut-footer .contact{
-    display: flex;
+.haut-footer .contact {
+  display: flex;
 }
 
-.contact-email , .contact-tel , .contact-adr{
-    width: 30em;
-    height: 10em;
-    text-align: center;
+.contact-email,
+.contact-tel,
+.contact-adr {
+  width: 30em;
+  height: 10em;
+  text-align: center;
 }
 
-.contact-email{
-    border-right: 3px solid white;
+.contact-email {
+  border-right: 3px solid white;
 }
 
-
-.contact-tel{
-    border-right: 3px solid white;
+.contact-tel {
+  border-right: 3px solid white;
 }
 
-.haut-footer h3{
-    font-size: 20px;
+.haut-footer h3 {
+  font-size: 20px;
 }
 
-.bas-footer{
-    background-color: var(--bleu-fonce);
-    height: 70px;
-    display: flex;
-    font-size: 10px;
-    justify-content: center;
+.bas-footer {
+  background-color: var(--bleu-fonce);
+  height: 70px;
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
 }
 
 #fullscreen_las-vegas {
-    width: 99.2vw;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: #1C2F66;
+  width: 99.2vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #1c2f66;
 }
 
 #fullscreen_las-vegas img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
-    display: block;
-    z-index: 0;
-    filter: blur(3px) brightness(40%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+  z-index: 0;
+  filter: blur(3px) brightness(40%);
 }
 
 #fullscreen_las-vegas h1 {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'BEBAS';
-    font-size: 110px;
-    z-index: 10;
-    text-align: center;
-    width: 700px;
-    letter-spacing: 0.2rem;
-    font-weight: 400;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "BEBAS";
+  font-size: 110px;
+  z-index: 10;
+  text-align: center;
+  width: 700px;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
 }
 
 .carte {
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
-    display: flex;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
+  display: flex;
 }
 
 svg {
-    background-color: white;
-    padding: 50px;
-    width: 900px;
-    height: 700px;
-    padding-left: 100px;
-    border-radius: 30px;
-    padding-left: 200px;
-    align-items: center;
-    justify-content: center;
+  background-color: white;
+  padding: 50px;
+  width: 900px;
+  height: 700px;
+  padding-left: 100px;
+  border-radius: 30px;
+  padding-left: 200px;
+  align-items: center;
+  justify-content: center;
 }
 
 path {
-    fill: var(--bleu-ciel);
-    stroke: #ffffff;
-    stroke-width: 1.5;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  fill: var(--bleu-ciel);
+  stroke: #ffffff;
+  stroke-width: 1.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 path:hover {
-    fill: var(--rouge);
-    stroke: #ffffff;
-    stroke-width: 2.5;
-    box-shadow: 0 0 5px rgb(255, 255, 255);
+  fill: var(--rouge);
+  stroke: #ffffff;
+  stroke-width: 2.5;
+  box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 .popup {
-    display: none;
-    position: fixed;
-    inset: 0;
-    align-items: center;
-    justify-content: center;
+  display: none;
+  position: fixed;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup:target {
-    display: flex;
+  display: flex;
 }
 
 .popup-content {
-    border: 3px solid black;
-    background: #fff;
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
+  border: 3px solid black;
+  background: #fff;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
 }
 
 .close {
-    display: inline-block;
-    margin-top: 20px;
-    background: #222;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 6px;
-    text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  background: #222;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
 .close:hover {
-    background: #444;
+  background: #444;
 }
 
 #texte-carte {
-    width: 150px;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    border: 3px solid var(--bleu-fonce);
-    color: var(--bleu-fonce);
-    border-radius: 30px;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    position: fixed;
-    left: 1em;
-    top: 20em;
+  width: 150px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid var(--bleu-fonce);
+  color: var(--bleu-fonce);
+  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  position: fixed;
+  left: 1em;
+  top: 20em;
 }
 
 #texte-carte img {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 /* CSS - oeuvres.html */
 
 .main-oeuvres header {
-    background-color: var(--bleu);
-    height: 25em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-top: 5em;
-    padding: 2em;
-    padding-top: 4em;
+  background-color: var(--bleu);
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 5em;
+  padding: 2em;
+  padding-top: 4em;
 }
 
 .main-oeuvres header h1 {
-    color: white;
-    font-family: 'BEBAS';
-    font-size: 80px;
-    letter-spacing: 0.1rem;
-    font-weight: 400;
-    justify-self: flex-end;
-    margin-top: 0;
+  color: white;
+  font-family: "BEBAS";
+  font-size: 80px;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  justify-self: flex-end;
+  margin-top: 0;
 }
 
 .main-oeuvres header h3 {
-    font-family: 'NATS';
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 50;
-    margin: 0;
+  font-family: "NATS";
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 50;
+  margin: 0;
 }
 
-
-
 .main-oeuvres section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 4em 2em;
-    margin: 4%;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4em 2em;
+  margin: 4%;
 }
 
 .main-oeuvres section div {
-    display: flex;
-    flex-direction: column;
-    width: 45em;
-    height: 40em;
-    background-color: white;
-    border-radius: var(--border-radius-bloc);
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: 45em;
+  height: 40em;
+  background-color: white;
+  border-radius: var(--border-radius-bloc);
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .main-oeuvres section div img {
-    width: 100%;
-    height: 22em;
-    border-radius: var(--border-radius-bloc) var(--border-radius-bloc) 0 0;
-    object-fit: cover;
-    box-shadow: inset 0 0 20px rgb(255, 0, 0);
+  width: 100%;
+  height: 22em;
+  border-radius: var(--border-radius-bloc) var(--border-radius-bloc) 0 0;
+  object-fit: cover;
+  box-shadow: inset 0 0 20px rgb(255, 0, 0);
 }
 
 .main-oeuvres section div p {
-    width: 80%;
-    text-align: left;
+  width: 80%;
+  text-align: left;
 }
 
 .main-oeuvres section div h2 {
-    width: 80%;
-    text-align: left;
-    color: var(--bleu);
-    text-transform: uppercase;
-    font-family: 'NATS';
-    font-size: 2.5em;
-    font-weight: 50;
+  width: 80%;
+  text-align: left;
+  color: var(--bleu);
+  text-transform: uppercase;
+  font-family: "NATS";
+  font-size: 2.5em;
+  font-weight: 50;
+}
+
+/* CSS - lieux.html */
+#Page-lieux-body * {
+&}
+
+#Page-lieux-body header {
+  overflow: hidden;
+  width: 100%;
+}
+
+#menu-lieux {
+  background-color: var(--bleu);
+  height: 3em;
+  display: flex;
+}
+
+main section {
+  font-family: "FREDOKA";
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.lieux-voyages article {
+  height: 20em;
+  width: 60em;
+  background-color: #dedfde;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-bloc);
+  color: var(--bleu-fonce);
+  overflow: hidden;
+  transition: all 0.6s ease-in-out 0.1s;
+}
+
+.lieux-voyages article img {
+  float: left;
+  height: 100%;
+  margin-right: 1em;
+  transition: all 0.5s ease-in-out;
+}
+
+/* L'article survolé s'agrandit */-
+.lieux-voyages article:hover {
+  height: 30em;
+  width: 70em;
+}
+
+/* Les AUTRES articles rétrécissent / s'effacent quand un est survolé */
+
+.lieux-voyages:has(article:hover) article:not(:hover) {
+  filter: blur(2px);
+}
+
+#Page-lieux-body:has(article:hover) nav {
+  opacity: 0;
+}
+
+#Page-lieux-body:has(article:hover) nav {
+  opacity: 0;
 }
