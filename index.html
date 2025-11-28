@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-perso/accueil.css">
     <title>Carte des États‑Unis</title>
 </head>
 
@@ -12,10 +13,21 @@
     <header>
         <nav>
             <ul>
-                <li class="left"><img src="assets/images/usa-nav-icon.png" alt="logo"><a href="index.html">HOME</a></li>
-                <li class="right"><a href="pages/oeuvres.html"><img src="assets/images/art-nav.png">OEUVRES</a></li>
-                <li class="right"><a href="pages/personnages.html"><img src="assets/images/personnage-nav.png">PERSONNAGES</a></li>
-                <li class="right"><a href="pages/lieux.html"><img src="assets/images/lieu-nav.png">LIEUX</a></li>
+                <li><a class="left" href="index.html">
+                        <img src="assets/images/usa-nav-icon.png" alt="logo">HOME
+                    </a></li>
+
+                <li class="right"><a href="pages/oeuvres.html">
+                        <img src="assets/images/art-nav.png">OEUVRES
+                    </a></li>
+
+                <li class="right"><a href="pages/personnages.html">
+                        <img src="assets/images/personnage-nav.png">PERSONNAGES
+                    </a></li>
+
+                <li class="right"><a href="pages/lieux.html">
+                        <img src="assets/images/lieu-nav.png">LIEUX
+                    </a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +35,23 @@
         <img src="assets/images/background_las-vegas.jpg" alt="">
         <h1>Bienvenue sur le site du Tourisme des États-Unis</h1>
     </div>
-    <article class="carte">
+    <section class="usa-presentation">
+        <article id="presentation-usa-tout">
+            <div id="usa-title"><h1>LES ÉTATS-UNIS D’AMÉRIQUE</h1></div>
+            <div id="usa-all-presentation">
+                <div id="usa-presentation"><h2>Les États-Unis sont un vaste pays d’Amérique du Nord composé de 50 États et d’un district fédéral. Ils offrent une incroyable diversité de paysages, de cultures et de traditions. Situés entre le Canada au nord et le Mexique au sud, les États-Unis sont bordés par l’océan Atlantique à l’est et le Pacifique à l’ouest.</h2></div>
+                <div id="right-presentation">
+                    <div id="right-presentation-1"><h3>Environ 335 millions d’habitants, avec une densité moyenne de 36 hab/km².</h3></div>
+                    <div id="right-presentation-2"><h3>Dollar américain (USD) 💵</h3></div>
+                    <div id="right-presentation-3"><h3>Drapeau : “Stars and Stripes”
+                        Hymne national : The Star-Spangled Banner
+                        Devise : In God We Trust
+                    </h3></div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="carte">
         <svg viewBox="0 0 959 593" xmlns="http://www.w3.org/2000/svg">
             <g class="state">
                 <a href="#popup-AL">
@@ -336,7 +364,7 @@
             <img src="assets/images/map-icon.png">
             <h2>Choisissez où vous rendre en cliquant sur la carte</h2>
         </div>
-    </article>
+    </section>
     <div id="popup-AL" class="popup">
         <div class="popup-content">
             <h2>Alabama</h2>
@@ -637,7 +665,6 @@
             <p>Capitale : Cheyenne</p><a href="#" class="close">Fermer</a>
         </div>
     </div>
-
     <footer>
         <div class="haut-footer">
             <h1>Pour nous contactez :</h1>
@@ -662,4 +689,5 @@
         </div>
     </footer>
 </body>
+
 </html>
